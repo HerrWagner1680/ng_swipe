@@ -116,10 +116,10 @@ function leftFunction() {
     console.log("z" + z);
     if (z>-200){ z = z - 200 } else { z = -200 };
     document.getElementById("myDIV_" + 0).style.marginLeft = String(z) + "px";
-    document.getElementById("myDIV_" + 0).style.WebkitTransition = "all 2s"; // Code for Safari 3.1 to 6.0
+    document.getElementById("myDIV_" + 0).style.WebkitTransition = "ease-out 200"; // Code for Safari 3.1 to 6.0
 
    // document.getElementById("myDIV").style.transition = "all 2s";
-    document.getElementById("myDIV_" + 0).style.transition = "all 2s";
+    document.getElementById("myDIV_" + 0).style.transition = "ease-out 200";
     console.log("revised z" + z);
 }
 function rightFunction() {
