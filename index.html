@@ -3,15 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>Todos $http</title>
-  <link rel="stylesheet" href="style.css">
-  <script>document.write("<base href=\"" + document.location + "\" />");</script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+  img {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  </style>
+  <!-- <script>document.write("<base href=\"" + document.location + "\" />");</script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
   <script src="app.js"></script>
 </head>
 <body ng-controller="TodoCtrl">
   <ul>
     <li ng-repeat="todo in todos">
-      {{todo.text}} - <em>{{todo.done}}</em>
+      {{todo.text}} - <em>{{todo.done}}</em> ..... IMAGE: {{todo.image}}
+      <img ng-src="{{todo.image}}" alt="little picture"/>
     </li>
   </ul>
 </body>
